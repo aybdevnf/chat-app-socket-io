@@ -1,0 +1,16 @@
+*{
+  font-family: 'Courier New', Courier, monospace;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#send-container{
+  position: absolute;
+  bottom:10px;
+}
+.message-container div{
+  background-color:grey;
+  padding:12px;
+}
