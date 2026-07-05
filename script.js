@@ -8,7 +8,7 @@ appendMsg(`You joined as ${username}`);
 client.on('chat-msg', data=>{
   appendMsg(`${data.sender}:${data.msg}`);
 });
-client.on('user-connected', username =>{
+client.on('user-connected', (username, usersNum) =>{
   appendMsg(`${username} Joined`);
 });
 client.emit('new-user', username);
